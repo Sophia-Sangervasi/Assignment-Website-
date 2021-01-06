@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <style type="text/css">
+            h1,h2 {
+                color: pink;
+                font-family: sans-serif;
+            }
+
+            body {
+                font-size: 20px;
+                /* background-color:aliceblue; */
+                margin:0px;
+            }
+
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            td{
+                border: 1px solid black;
+                padding: 3px;
+            }
+
+            td.empty {
+                background-color: #ddd;
+            }
+
+            .container {
+                margin: 0 auto;
+                padding: 5px;
+                max-width: 1200px;
+            }
+
+            #menu {
+                position: relative;
+                display: block;
+                width: 100%;
+                background-color: lightpink;
+                font-family: sans-serif;
+                color: white;
+            }
+            .page-name {
+                font-weight: bold;
+            }
+            .menu-item {
+                position: relative;
+                padding: 0.5em;
+                display: inline-block;
+            }
+            .menu-item a {
+                text-decoration: none;
+                color: white;
+            }
+            .menu-item:hover {
+                background-color: hotpink;
+                cursor: pointer;
+            }            
+            .menu-item .dropdown {
+                display: none;
+            }
+            .menu-item:hover .dropdown {
+                display: block;
+                position: absolute;
+                top: 2em;
+                left: 0px;
+                /* height: 200px; */
+                min-width: 150px;
+                background-color: hotpink;
+            }
+            .dropdown-item {
+                position: relative;
+                padding: 0.5em;
+                display: block;
+            }
+            .dropdown-item:hover {
+                background-color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <div class="menu-item page-name">Sophia's Site</div>
+            <div class="menu-item"><a href="#">Home</a></div>
+            <div class="menu-item">
+                <a href="#">Assignments</a>
+                <div class="dropdown">
+                    <div class="dropdown-item">Hello!</div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            
+
+        <h1>Sophia's Assignments</h1>
+        <p>Full-stack app development 2021</p>
+        <ul>
+            <li>Difficulty: 1 = no problem at all, 5 = could not do</li>
+            <li>Usefulness: 1 = not a good use of time, 5 = very useful</li>
+        </ul>
+        <h2>Week 1: Building a website</h2>
+
+        </div>
+    </body>
+</html>

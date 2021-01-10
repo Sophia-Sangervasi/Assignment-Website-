@@ -77,21 +77,23 @@
                 /* height: 200px; */
                 min-width: 150px;
                 background-color: hotpink;
+                z-index: 20;
             }
             .dropdown-item {
                 position: relative;
                 padding: 0.5em;
                 display: block;
-
+                overflow:hidden;
                 z-index: 10;
             }
             .dropdown-item:hover {
                 background-color: hotpink;
-                z-index: 20;
+
             }
             .flag{
               color:white;
             }
+
 
             .container .aboutme .figure{
               width: 400px;
@@ -126,7 +128,7 @@
         <div class="container">
 
           <h1>Sophia's Website</h1>
-              <marquee behavior= "alternate" class = "flag" > Welcome to my website!</marquee>
+              <marquee behavior= "alternate" class = "flag">  Welcome to my website!</marquee>
               <div class = aboutme>
                 <figure class ="figure">
                   <img src="professional_photo.png" class="figure-img img-fluid rounded" alt="" width = 400px height= 300px vertical-align = top>

@@ -5,29 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-    <title>Beta Coders </title>
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Beta Coders  </title>
+      <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-  <body>
+      <!--CSS-->
+      <style type="text/css">
+        .margin {
+          margin: 0 auto;
+          padding: 5px;
+          max-width: 1200px;
+      }
 
 
-    <!--This creates the Nav bar at the top of the screen-->
 
+      </style>
+</head>
 
-  <!--  <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="C:\Users\Sophia\Downloads\Beta Coders 2019-2020\Capture.jpeg.png" alt="" width="100" height="80">
-      </a>
-    </div> -->
-
-    <!-- Image and text -->
+<body>
+  <!--The navigation bar-->
     <nav class="navbar navbar-expand-lg bg-light navbar-light">
     <a class="navbar-brand" href="#"> <img src="C:\Users\Sophia\Downloads\Beta Coders 2019-2020\Capture.jpeg.png" alt="" width="70" height="50">
-      Beta Coders</a>
+      Beta Coders </a>
+
+      <!--the toggle button will appear when the screen is reduced to a smaller size-->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,11 +44,58 @@
           <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Join!</a>
+          <a class="nav-link" href="join.html">Join!</a>
         </li>
       </ul>
     </div>
   </nav>
+
+<!--The picture carousel on homepage-->
+<div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+    <!--my indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" >
+
+    <!--this is the active slide that will be the starting point-->
+    <div class="carousel-item active" data-interval="10000" >
+
+      <img src="jake Redman_tribune.jpg" style="width:100%"  height="570px">
+    </div>
+
+    <div class="carousel-item" data-interval="10000" >
+      <img src="Capture.jpeg.png" style="width:100%" height="570px" >
+    </div>
+
+    <div class="carousel-item" data-interval="10000" >
+      <img src="Sofia schwartz_ups.jpg" style="width:100%"  height="570px" >
+
+    </div>
+
+    <!--the button controls on the side of carousel images-->
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden">Next</span>
+      </a>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+       <span class="visually-hidden">Previous</span>
+     </a>
+
+  </div>
+
+
+
+
+
+</div>
+</div>
 
 
 </body>

@@ -30,6 +30,14 @@
         padding: 5px;
       }
 
+      .container .second #lastPara p{
+        margin-left: 15px;
+        display: block;
+        padding: 5px;
+
+
+      }
+
         .container .intro{
 
          margin-left: 15px;
@@ -49,26 +57,23 @@
       .container .second{
         margin-top:150px;
         padding-top:55px;
-
+        margin-bottom: 150px;
       }
-      .container .second .aboutFounder .figure{
-        margin-top: 50px;
+      .container .second #image .figure{
+        float: left;
+        margin-top: 5px;
         margin-right: 15px;
         margin-bottom: 50px;
-        float: left;
-        padding: 5px;
+        border-right: 15px;
+        padding: 30px;
         overflow: hidden;
-
-      }
-      .container .second .intro{
-        margin-left: 15px;
-        margin-top:55px;
-        display: block;
 
       }
       .container .second #title h1{
         border-left:100px;
         text-align: left;
+        padding: 10px;
+        margin-bottom: 10px;
       }
 
 
@@ -77,9 +82,9 @@
 
   </head>
 
-  <body>
+<body>
 <!--NAVBAR code-->
-    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+  <nav class="navbar navbar-expand-lg bg-light navbar-light">
     <a class="navbar-brand" href="#"> <img src="logo.jpg" alt="" width="70" height="50">
       Beta Coders</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -91,10 +96,10 @@
           <a class="nav-link" href="BetaCoders_homepage.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href="aboutus.html">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Join!</a>
+          <a class="nav-link" href="join.html">Join!</a>
         </li>
       </ul>
     </div>
@@ -102,21 +107,23 @@
 
 <!--The following code is the rest of content on page about beta coder's mission and who runs it-->
 
-<div class="container">
+  <div class="container shadow p-3 mb-5 bg-body rounded">
 
-  <h1> Underrepresented in Tech</h1>
-  <p> A <a href="https://www.wired.com/story/five-years-tech-diversity-reports-little-progress/" target="_blank" rel="noopener noreferrer">Wired survey</a>
-    conducted in October 2019 found that the Black, Hispanic, and Indigenous population represented only 5% of firms in the
-    Silicon Valley technology firms. BIPOC are disproportionately underrepresented in STEM-related subjects such as computer science.
-    BIPOC students make up <a href="https://www.tacomaschools.org/about" target="_blank" rel="noopener noreferrer">aproximately 62.95% of the Taoma Public Schools district.</a>
-    Of that percentage,<a href ="https://www.tacomaschools.org/about/strategic-plan/goal-details/~board/sp-academic-excellence/post/state-assessment-smarter-balanced-math" target="_blank" rel="noopener noreferrer">
-     78.8% of students in 10th grade </a> enrolled at Lincoln High School were below or well-below state standards in state math assessments in the 2018-2019 school year.
-     Beta Coders club works together with Lincoln High School's computer science teachers to help empower, and encourage students to get excited about technology.</p>
+    <h1> Underrepresented in Tech</h1>
+    <p> A <a href="https://www.wired.com/story/five-years-tech-diversity-reports-little-progress/" target="_blank" rel="noopener noreferrer">Wired survey</a>
+      conducted in October 2019 found that the Black, Hispanic, and Indigenous population represented only 5% of firms in the
+      Silicon Valley technology firms. BIPOC are disproportionately underrepresented in STEM-related subjects such as computer science.
+      BIPOC students make up <a href="https://www.tacomaschools.org/about" target="_blank" rel="noopener noreferrer">aproximately 62.95% of the Taoma Public Schools district.</a>
+      Of that percentage,<a href ="https://www.tacomaschools.org/about/strategic-plan/goal-details/~board/sp-academic-excellence/post/state-assessment-smarter-balanced-math" target="_blank" rel="noopener noreferrer">
+      78.8% of students in 10th grade </a> enrolled at Lincoln High School were below or well-below state standards in state math assessments in the 2018-2019 school year.
+      Beta Coders club works together with Lincoln High School's computer science teachers to help empower, and encourage students to get excited about technology.
+    </p>
 
-  <h1>Our mission</h1>
-  <p> Beta Coders club is committed to serving the Tacoma, Washington community through volunteer work by serving Lincoln High School. Our mission is to cultivate equity, accessibility, and diversity in Lincoln High School's
+    <h1>Our mission</h1>
+    <p> Beta Coders club is committed to serving the Tacoma, Washington community through volunteer work by serving Lincoln High School. Our mission is to cultivate equity, accessibility, and diversity in Lincoln High School's
     computer science classrooms. Beta Coders club and its members strive to inspire high school students to pursue an interest
-    in computer science.</p>
+    in computer science.
+    </p>
 
     <h1 class="title">Our current club president</h1>
 
@@ -142,18 +149,22 @@
         <h1>Our founder</h1>
       </div>
 
-      <div class="aboutFounder">
-        <figure class="figure">
-          <img src="Shwartz_founder.jpg" class="figure-img img-fluid rounded" alt="" width = 400px height= 300px vertical-align = top>
-        </figure>
-      </div>
 
-      <p class="intro"> Sofia Schwartz founded Beta Coders club in the fall of 2016. Sofia knew that she wanted to make a difference in the greater Tacoma area by
+
+      <div id="image" style="clear:left;">
+          <p>
+            <figure class="figure" >
+              <img src="Shwartz_founder.jpg" class="figure-img img-fluid rounded" alt="Ross Mulhausen" width = 400px height= 300px vertical-align = top>
+              <figcaption>Ross Mulhausen 2018, University of Puget Sound</figcaption>
+            </figure>
+          </p>
+            <p id="lastPara"> Sofia Schwartz founded Beta Coders club in the fall of 2016. Sofia knew that she wanted to make a difference in the greater Tacoma area by
         making Computer Science more accessible to BIPOC. After brainstorming some ideas she came up with Beta Coders Club. With the help of her peers and a wonderful
         University of Puget Sound professor, Sofia was able to get in touch with Lincoln High's Computer Science teacher. Beta Coders has since made a lasting impact in students lives
-        and continues to make a difference all thanks to her! Sofia graduated from University of Puget Sound in 2018 with a BS in Computer Science. </p>
+        and continues to make a difference all thanks to her! Sofia graduated from University of Puget Sound in 2018 with a BS in Computer Science.
+          </p>
+        </div>
     </div>
-  </div>
 
 </div>
 

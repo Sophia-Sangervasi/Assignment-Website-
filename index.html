@@ -1,206 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Assignments</title>
-        <style type="text/css">
-            h1,h2 {
-                color: pink;
-                font-family: sans-serif;
-            }
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <title>Beta Coders  </title>
+      <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
 
-            body {
-                font-size: 20px;
-                /* background-color:aliceblue; */
-                margin:0px;
-            }
+      <!--CSS-->
+      <style type="text/css">
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
+      .margin {
+          margin: 0 auto;
+          padding: 5px;
+          max-width: 1200px;
+      }
 
-            td{
-                border: 1px solid black;
-                padding: 3px;
-            }
+      .links{
+        color: #979A9A;
+      }
 
-            td.empty {
-                background-color: #ddd;
-            }
+      .links:hover{
+        color:#979A9A;
+      }
 
-            .container {
-                margin: 0 auto;
-                padding: 5px;
-                max-width: 1200px;
-            }
+      .btn btn-outline-light:hover{
+        color:#979A9A;
+      }
 
-            #menu {
-                position: relative;
-                display: block;
-                width: 100%;
-                background-color: lightpink;
-                font-family: sans-serif;
-                color: white;
-            }
-            .page-name {
-                font-weight: bold;
-            }
-            .menu-item {
-                position: relative;
-                padding: 0.5em;
-                display: inline-block;
-            }
-            .menu-item a {
-                text-decoration: none;
-                color: white;
-            }
-            .menu-item:hover {
-                background-color: hotpink;
-                cursor: pointer;
-            }
-            .menu-item .dropdown {
-                display: none;
-            }
-            .menu-item:hover .dropdown {
-                display: block;
-                position: absolute;
-                top: 2em;
-                left: 0px;
-                /* height: 200px; */
-                min-width: 150px;
-                background-color: hotpink;
-            }
-            .dropdown-item {
-                position: relative;
-                padding: 0.5em;
-                display: block;
-            }
-            .dropdown-item:hover {
-                background-color: hotpink;
-            }
-            .dropdown-item2 {
-                position: relative;
-                padding-top: 0.5em;
-                display: block;
-            }
-            .dropdown-item2:hover {
-                background-color: hotpink;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="menu">
-            <div class="menu-item page-name">Sophia's Site</div>
-            <div class="menu-item"><a href="home.html">Home</a></div>
-            <div class="menu-item">
-                <a href="#">Assignments</a>
-                <div class="dropdown">
-                    <div class="dropdown-item"><a href = "index.html">Week 1</a> </div>
-                      <div class="dropdown-item2"><a href = "week2.html">Week 2</a> </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
+      .altLink{
+        color:gray;
+      }
+      #news{
+        margin-top: 50px;
+
+      }
+      #spokesman-review{
+          padding-right: 30px;
+          background-color: Tomato;
+          max-width: 1200px;
+          float: left;
+
+      }
+      #upsArches{
+        padding-right: 30px;
+        background-color: #5DADE2;
+        max-width: 1200px;
+        float: left;
+
+      }
 
 
-        <h1>Sophia's Assignments</h1>
-        <p>Full-stack app development 2021</p>
-        <ul>
-            <li>Difficulty: 1 = no problem at all, 5 = could not do</li>
-            <li>Usefulness: 1 = not a good use of time, 5 = very useful</li>
-        </ul>
-        <h2>Week 1: Building a website</h2>
-        <table>
-            <thead>
-                <tr>
-                    <td>#</td>
-                    <td>Assignment</td>
-                    <td>Submission</td>
-                    <td>Time (hours)</td>
-                    <td>Difficult (1-5)</td>
-                    <td>Useful (1-5)</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1.1</td>
-                    <td>Watch tutorial 1, follow along</td>
-                    <td class="empty">N/A</td>
-                    <td>1.5</td>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>1.2</td>
-                    <td>Deploy a website to GitHub pages</td>
-                    <td><a href="https://sophia-sangervasi.github.io">link</td>
-                    <td>.20</td>
-                    <td>1</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>1.3</td>
-                    <td>Deploy an assignments page (this page!) </td>
-                    <td><a href="https://sophia-sangervasi.github.io">link</td>link to assingments page</td>
-                    <td>.20</td>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>1.4*</td>
-                    <td>Create a personal/professional homepage</td>
-                    <td>Click the home tab on the Nav bar</td>
-                    <td>2 hours</td>
-                    <td>2</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>1.5</td>
-                    <td>Create two screens of your first app</td>
-                    <td><a href="https://sophia-sangervasi.github.io/BetaCoders_homepage.html">Link to club website</a></td>
-                    <td>2 days</td>
-                    <td>3</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>1.6*</td>
-                    <td>Create a side-menu in CSS</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <!-- <tr>
-                    <td>1.7*</td>
-                    <td>Create a periodic table of the elements using HTML & CSS</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr> -->
-                <tr>
-                    <td>1.A</td>
-                    <td>What did you like this week?</td>
-                    <td colspan="4"> This week I really enjoyed learning about how to use github to deploy websites.</td>
-                </tr>
-                <tr>
-                    <td>1.B</td>
-                    <td>What didn't you like this week?</td>
-                    <td colspan="4">I think that if we could spend more time on learning more about CSS that would be helpful.</td>
-                </tr>
-                <tr>
-                    <td>1.C</td>
-                    <td>How can we improve the material from this week?</td>
-                    <td colspan="4"> I think that spending less time on html could be beneficial so that you can learn more about CSS.</td>
-                </tr>
-                <tr>
-                    <td>1.D*</td>
-                    <td>Show us anything else you coded up this week!</td>
-                    <td colspan="4"></td>
-                </tr>
-            </tbody>
-        </table>
+
+      </style>
+</head>
+
+<body>
+  <!--The navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-light navbar-light">
+    <a class="navbar-brand" href="#"> <img src="logo.jpg" alt="" width="70" height="50">
+      Beta Coders </a>
+
+      <!--the toggle button will appear when the screen is reduced to a smaller size-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="join.html">Join!</a>
+        </li>
+      </ul>
     </div>
-    </body>
+  </nav>
+
+<!--The picture carousel on homepage-->
+<div class="container shadow p-3 mb-5 bg-body rounded">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+
+    <!--my indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" >
+
+    <!--this is the active slide that will be the starting point-->
+    <div class="carousel-item active" data-interval="10000" >
+      <figure>
+        <img src="jake Redman_tribune.jpg" style="width:100%"  height="570px">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Want to Join?</h5>
+          <button type="button" class="btn btn-outline-light"><a class="links"  href=" join.html" >Learn more</a></button>
+          <p>University of Puget Sound sophomore Jake Redman, left, assists Lincoln High School student Antony Vo at Lincoln High School in Tacoma, Wash. Redman is part of Beta Coders, a group from the University of
+          Puget Sound that tutors Lincoln students. (Brooke Thames / The News Tribune)</p>
+        </div>
+      </figure>
+    </div>
+
+    <div class="carousel-item" data-interval="10000" >
+      <figure>
+        <img src="logo.jpg" style="width:100%" height="570px" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Read our mission to learn about what we do.</h5>
+          <button type="button" class="btn btn-outline-light"><a class="links"  href=" aboutus.html" >About us</a></button>
+        </div>
+      </figure>
+
+    </div>
+
+    <div class="carousel-item" data-interval="10000" >
+      <figure>
+        <img src="Sofia schwartz_ups.jpg" style="width:100%"  height="570px" >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Read about us!</h5>
+          <button type="button" class="btn btn-outline-light"><a class="links"  href="#localnews">News</a></button>
+          <p >Club founder Sofia Schwartz assists a student at Lincoln — Photo courtesy of the University of Puget Sound</p>
+        </div>
+      </figure>
+
+
+
+    </div>
+
+    <!--the button controls on the side of carousel images-->
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+    </a>
+
+    </div>
+
+  </div>
+
+  <!--Rest of content on the homepage-->
+  <div id="news">
+    <div id="spokesman-review" class="container shadow p-3 mb-5 bg-body rounded">
+
+        <a name="localnews" target = "_blank" href="https://www.spokesman.com/stories/2017/may/31/the-beta-coders-club-seeks-to-promote-diversity-in/"> <img src = "SpokesMan-Review.jpg" style ="width:100%; height:200px; "> </a>
+        <p style ="color: white">Click the image to read more about Beta Coders in the local Tacoma news paper!</p>
+
+
+    </div>
+
+    <div id="upsArches" class="container shadow p-3 mb-5 bg-body rounded">
+      <a name ="archimage"><img src></a>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+
+</body>
 </html>

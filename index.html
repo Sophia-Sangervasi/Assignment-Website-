@@ -14,7 +14,9 @@
 
       <!--CSS-->
       <style type="text/css">
-
+      p{
+        text-align:center;
+      }
       .margin {
           margin: 0 auto;
           padding: 5px;
@@ -37,27 +39,42 @@
         color:gray;
       }
       #news{
-        margin-top: 50px;
+        margin-top: 20px;
+        padding-top: 20px;
+        margin-bottom: 20px;
 
       }
       #spokesman-review{
-          padding-right: 30px;
+          padding-top: 15px;
           background-color: Tomato;
           max-width: 1200px;
-          float: left;
+          float: right;
+
 
       }
-      #upsArches{
-        padding-right: 30px;
+      #pugetsound{
+        padding-right: 15px;
         background-color: #5DADE2;
         max-width: 1200px;
         float: left;
 
       }
+      #thetrail{
+        padding-right: 30px;
+        background-color: #F3EC84;
+        max-width: 1200px;
+        float: left;
 
+      }
+      #spokesman-review{
+        margin-top: auto;
+      }
+      #backgroundDiv{
+        margin: auto;
+      }
 
+    </style>
 
-      </style>
 </head>
 
 <body>
@@ -86,7 +103,7 @@
   </nav>
 
 <!--The picture carousel on homepage-->
-<div class="container shadow p-3 mb-5 bg-body rounded">
+<div id = "backgroundDiv" class="container shadow p-3 mb-5 bg-body rounded">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 
     <!--my indicators-->
@@ -150,22 +167,39 @@
 
   </div>
 
-  <!--Rest of content on the homepage-->
-  <div id="news">
+<!--Current club events div-->
+  <div id="currenteventspage">
+
+    <h1 style="text-align: center;">Current Club Events</h1>
+    <p>
+      Due to everthing being online this year B.C.C will be attending the ASUPS virtual spring club fair. Come back to this page
+      later when we have more information about the event!
+    </p>
+
+
+  </div>
+
+  <!--news articles section-->
+  <div id="news" >
+    <h1 style ="text-align: center">Read about us in local news articles!</h1>
     <div id="spokesman-review" class="container shadow p-3 mb-5 bg-body rounded">
-
         <a name="localnews" target = "_blank" href="https://www.spokesman.com/stories/2017/may/31/the-beta-coders-club-seeks-to-promote-diversity-in/"> <img src = "SpokesMan-Review.JPG" style ="width:100%; height:200px; "> </a>
-        <p style ="color: white">Click the image to read more about Beta Coders in the local Tacoma news paper!</p>
-
-
+        <p style ="color: white">Click the image to read about us in Spokane.</p>
     </div>
 
-    <div id="upsArches" class="container shadow p-3 mb-5 bg-body rounded">
-      <a name ="archimage"><img src></a>
+    <div id="pugetsound" class="container shadow p-3 mb-5 bg-body rounded">
+      <a name ="archimage"  target = "_blank" href="https://www.pugetsound.edu/stories/detail/the-beta-coders"><img src ="pugetsoundstories.JPG" style ="width:100%; height:200px; "></a>
+        <p style ="color: white">Click the image to read about us in University of Puget Sound Stories page.</p>
+    </div>
 
+    <div id="thetrail" class="container shadow p-3 mb-5 bg-body rounded">
+      <a name ="trail"  target = "_blank" href="http://trail.pugetsound.edu/?p=15590"><img src ="trail.JPG" style ="width:100%; height:200px; "></a>
+        <p style ="color: white">Click the image to read about us in University of Puget Sound Trails.</p>
     </div>
 
   </div>
+
+
 
 
 </div>
